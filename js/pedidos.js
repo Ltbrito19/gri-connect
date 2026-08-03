@@ -15,6 +15,8 @@ let pedidosPortal = [];
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    alert("PEDIDOS.JS VERSÃO 04");
+   
     carregarPedidosPortal();
 
 });
@@ -23,7 +25,9 @@ async function carregarPedidosPortal() {
 
     try {
 
-        const resposta = await fetch("../json/pedidos.json");
+        const resposta = await fetch(
+            "../json/pedidos.json?t=" + new Date().getTime()
+        );
 
         pedidos = await resposta.json();
 
