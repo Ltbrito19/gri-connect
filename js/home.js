@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .getElementById("pesquisa")
         .addEventListener("keypress", function(e){
 
-            if(e.key==="Enter"){
+            if(e.key === "Enter"){
 
                 pesquisarPedido();
 
@@ -24,26 +24,33 @@ function carregarSincronizacao(){
 
     fetch("../json/portal.json")
 
-    .then(res=>res.json())
+    .then(res => res.json())
 
-    .then(json=>{
+    .then(json => {
 
-        document.getElementById("dataSync").innerHTML=json.data;
+        document.getElementById("dataSync").innerHTML = json.data;
 
-        document.getElementById("horaSync").innerHTML=json.hora;
+        document.getElementById("horaSync").innerHTML = json.hora;
+
+    })
+
+    .catch(erro => {
+
+        console.error(erro);
 
     });
 
 }
 
-function pesquisarPedido(){
+async function pesquisarPedido(){
 
-    let pesquisa=document
+    const texto = document
         .getElementById("pesquisa")
         .value
-        .trim();
+        .trim()
+        .toLowerCase();
 
-    if(pesquisa===""){
+    if(texto === ""){
 
         alert("Informe o pedido para pesquisa.");
 
@@ -51,6 +58,44 @@ function pesquisarPedido(){
 
     }
 
-    alert("Pesquisa: "+pesquisa);
+    try{
+
+        const resposta = await fetch("../json/pedidos.json");
+
+        const pedidos = await resposta.json();
+
+        const pedido = pedidos.find(p =>
+
+            p.numero.toLowerCase().includes(texto) ||
+            p.cidade.toLowerCase().includes(texto) ||
+            p.companhia.toLowerCase().includes(texto) ||
+            p.inspetor.toLowerCase().includes(texto)
+
+        );
+
+        if(!pedido){
+
+            alert("Pedido não encontrado.");
+
+            return;
+
+        }
+
+        sessionStorage.setItem(
+            "pedidoPesquisa",
+            pedido.numero
+        );
+
+        window.location.href = "pedidos.html";
+
+    }
+
+    catch(erro){
+
+        console.error(erro);
+
+        alert("Erro ao pesquisar o pedido.");
+
+    }
 
 }

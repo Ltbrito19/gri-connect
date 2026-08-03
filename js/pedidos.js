@@ -43,6 +43,8 @@ async function carregarPedidosPortal() {
 
         configurarModal();
 
+        abrirPesquisaAutomatica();
+
     } catch (erro) {
 
         console.error(erro);
@@ -492,5 +494,31 @@ GRI Gerenciamento e Inspeção de Risco`;
         window.open(url, "_blank");
 
     };
+
+}
+
+function abrirPesquisaAutomatica(){
+
+    const numero =
+        sessionStorage.getItem("pedidoPesquisa");
+
+    if(!numero){
+
+        return;
+
+    }
+
+    const pedido =
+        pedidosPortal.find(p =>
+            p.numero === numero
+        );
+
+    if(pedido){
+
+        abrirModal(pedido);
+
+    }
+
+    sessionStorage.removeItem("pedidoPesquisa");
 
 }
