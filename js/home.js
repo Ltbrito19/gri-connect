@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function carregarSincronizacao(){
 
-    fetch("../json/portal.json")
+    fetch("../json/portal.json?t=" + new Date().getTime())
 
     .then(res => res.json())
 
@@ -60,7 +60,9 @@ async function pesquisarPedido(){
 
     try{
 
-        const resposta = await fetch("../json/pedidos.json");
+        const resposta = await fetch(
+            "../json/pedidos.json?t=" + new Date().getTime()
+        );
 
         const pedidos = await resposta.json();
 
