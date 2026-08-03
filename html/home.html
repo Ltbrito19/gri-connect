@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GRI CONNECT SYS - Home</title>
+
+    <link rel="stylesheet" href="../css/home.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <img src="../assets/logo.png" class="logo">
+
+        <h1>GRI CONNECT SYS</h1>
+
+        <p>Consulta Inteligente de Inspeções</p>
+
+    </header>
+
+    <section class="boasvindas">
+
+        <h2>Olá, Luciano!</h2>
+
+        <span>Bem-vindo.</span>
+
+    </section>
+
+    <section class="sync">
+
+        <h3>Última sincronização</h3>
+
+        <div id="dataSync">01/08/2026</div>
+
+        <div id="horaSync">14:35</div>
+
+    </section>
+
+    <section class="pesquisa">
+
+        <label>Pesquisar Pedido</label>
+
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Número, Cidade, Inspetor ou Companhia">
+
+        <button id="btnPesquisar">
+
+            PESQUISAR
+
+        </button>
+
+    </section>
+
+    <section class="atalhos">
+
+        <button
+            class="atalho"
+            onclick="location.href='pedidos.html'">
+
+            📋
+
+            <span>Todos os Pedidos</span>
+
+        </button>
+
+        <button class="atalho">
+
+            ⏳
+
+            <span>Pendentes</span>
+
+        </button>
+
+        <button class="atalho">
+
+            📅
+
+            <span>Agendados</span>
+
+        </button>
+
+        <button class="atalho">
+
+            ✅
+
+            <span>Finalizados</span>
+
+        </button>
+
+    </section>
+
+    <section class="cobrancas">
+
+        <button class="acao">
+
+            💬 Cobrar Agendamento
+
+        </button>
+
+        <button class="acao">
+
+            📄 Cobrar Laudo
+
+        </button>
+
+    </section>
+
+    <section class="ultimos">
+
+        <h3>
+
+            Últimos pedidos consultados
+
+        </h3>
+
+        <div class="pedido">
+
+            <strong>H496577-26</strong>
+
+            <span>HDI Seguros</span>
+
+            <span>Francisco</span>
+
+            <small>Finalizado</small>
+
+        </div>
+
+        <div class="pedido">
+
+            <strong>H496411-26</strong>
+
+            <span>HDI Seguros</span>
+
+            <span>Ronieli</span>
+
+            <small>Agendado</small>
+
+        </div>
+
+    </section>
+
+</div>
+
+<nav>
+
+    <button>
+
+        🏠
+
+        <span>Home</span>
+
+    </button>
+
+    <button>
+
+        📋
+
+        <span>Pedidos</span>
+
+    </button>
+
+    <button>
+
+        🔎
+
+        <span>Pesquisar</span>
+
+    </button>
+
+    <button>
+
+        ⚙
+
+        <span>Config.</span>
+
+    </button>
+
+</nav>
+
+<script src="../js/home.js"></script>
+
+</body>
+
+</html>

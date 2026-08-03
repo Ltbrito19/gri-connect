@@ -1,0 +1,281 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+
+    background:#f4f7fb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:25px;
+
+}
+
+.login-card{
+
+    width:100%;
+    max-width:430px;
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.12);
+
+    text-align:center;
+
+}
+
+.logo img{
+
+    width:150px;
+
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    color:#005da8;
+
+    font-size:30px;
+
+    margin-bottom:8px;
+
+}
+
+h2{
+
+    color:#666;
+
+    font-size:17px;
+
+    font-weight:400;
+
+    margin-bottom:35px;
+
+}
+
+.grupo{
+
+    text-align:left;
+
+    margin-bottom:22px;
+
+}
+
+.grupo label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#444;
+
+    font-weight:600;
+
+}
+
+.grupo input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #d5d5d5;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.25s;
+
+}
+
+.grupo input:focus{
+
+    outline:none;
+
+    border-color:#005da8;
+
+    box-shadow:0 0 10px rgba(0,93,168,.20);
+
+}
+
+button{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    background:#005da8;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+button:hover{
+
+    background:#004887;
+
+}
+
+.loading{
+
+    margin-top:35px;
+
+    text-align:center;
+
+}
+
+.loading img{
+
+    width:110px;
+
+    animation:girar 3s linear infinite;
+
+}
+
+.loading h3{
+
+    margin-top:20px;
+
+    color:#005da8;
+
+}
+
+.loading p{
+
+    color:#666;
+
+    margin-top:10px;
+
+}
+
+.oculto{
+
+    display:none;
+
+}
+
+.rodape{
+
+    margin-top:35px;
+
+    border-top:1px solid #ececec;
+
+    padding-top:18px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}
+
+.rodape span{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+.rodape strong{
+
+    color:#005da8;
+
+    font-size:15px;
+
+}
+
+.versao{
+
+    margin-top:8px;
+
+    color:#999 !important;
+
+    font-size:13px !important;
+
+}
+
+@keyframes girar{
+
+    from{
+
+        transform:rotateY(0deg);
+
+    }
+
+    to{
+
+        transform:rotateY(360deg);
+
+    }
+
+}
+
+@media(max-width:600px){
+
+.login-card{
+
+    padding:30px 22px;
+
+}
+
+.logo img{
+
+    width:120px;
+
+}
+
+h1{
+
+    font-size:25px;
+
+}
+
+h2{
+
+    font-size:15px;
+
+}
+
+}

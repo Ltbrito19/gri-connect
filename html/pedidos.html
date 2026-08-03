@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GRI CONNECT SYS - Pedidos</title>
+
+    <link rel="stylesheet" href="../css/pedidos.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="topo">
+
+        <button
+            class="voltar"
+            onclick="history.back()">
+
+            ← Voltar
+
+        </button>
+
+        <h1>
+
+            PEDIDOS
+
+        </h1>
+
+    </header>
+
+
+    <section class="pesquisa">
+
+        <input
+            id="txtPesquisa"
+            type="text"
+            placeholder="Pedido, cidade, inspetor ou companhia">
+
+        <button
+            id="btnPesquisar">
+
+            PESQUISAR
+
+        </button>
+
+    </section>
+
+
+    <section class="resumo">
+
+        <div class="item vermelho">
+
+            <span>🔴 Críticos</span>
+
+            <strong id="qtCriticos">0</strong>
+
+        </div>
+
+        <div class="item amarelo">
+
+            <span>🟡 Aguardando</span>
+
+            <strong id="qtAguardando">0</strong>
+
+        </div>
+
+        <div class="item verde">
+
+            <span>🟢 Recebidos Hoje</span>
+
+            <strong id="qtHoje">0</strong>
+
+        </div>
+
+    </section>
+
+
+    <!--
+        A lista será criada automaticamente
+        pelo pedidos.js
+    -->
+
+    <section
+        id="listaPedidos">
+
+    </section>
+
+</div>
+
+
+<!-- ===========================================
+     MODAL
+============================================ -->
+
+<div
+    id="modalPedido"
+    class="modal">
+
+    <div class="modal-conteudo">
+
+        <div class="modal-topo">
+
+            <h2>Pedido</h2>
+
+            <button
+                id="btnFecharModal"
+                class="fechar">
+
+                ✕
+
+            </button>
+
+        </div>
+
+        <h1 id="modalNumero"></h1>
+
+        <div
+            id="modalStatus"
+            class="status">
+
+        </div>
+
+        <div class="linha">
+
+            <span>Recebido</span>
+
+            <strong id="modalRecebido"></strong>
+
+        </div>
+
+        <div class="linha">
+
+            <span>Dias em aberto</span>
+
+            <strong id="modalDias"></strong>
+
+        </div>
+
+        <div class="linha">
+
+            <span>Companhia</span>
+
+            <strong id="modalCompanhia"></strong>
+
+        </div>
+
+        <div class="linha">
+
+            <span>Produto</span>
+
+            <strong id="modalProduto"></strong>
+
+        </div>
+
+        <div class="linha">
+
+            <span>Cidade / Bairro</span>
+
+            <strong id="modalCidade"></strong>
+
+        </div>
+
+        <div class="linha">
+
+            <span>Inspetor</span>
+
+            <strong id="modalInspetor"></strong>
+
+        </div>
+
+        <div class="linha">
+
+            <span>Agendamento</span>
+
+            <strong id="modalAgendamento"></strong>
+
+        </div>
+
+        <button
+            id="btnWhatsapp"
+            class="acao">
+
+            💬 COBRAR
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="../js/pedidos.js"></script>
+
+</body>
+
+</html>

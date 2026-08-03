@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GRI CONNECT SYS</title>
+
+    <link rel="icon" href="assets/favicon.png"> <!-- <link rel="icon" href="assets/favicon.png"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="login-card">
+
+            <div class="logo">
+
+                <img id="logoGRI"
+                    src="assets/logo.png"
+                    alt="GRI SYS">
+
+            </div>
+
+            <h1>GRI CONNECT SYS</h1>
+
+            <h2>Consulta Inteligente de Inspeções</h2>
+
+            <form id="loginForm">
+
+                <div class="grupo">
+
+                    <label>Usuário</label>
+
+                    <input
+                        type="text"
+                        id="usuario"
+                        autocomplete="username"
+                        autofocus
+                    >
+
+                </div>
+
+                <div class="grupo">
+
+                    <label>Senha</label>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        autocomplete="current-password"
+                    >
+
+                </div>
+
+                <button
+                    id="btnEntrar"
+                    type="submit">
+
+                    ENTRAR
+
+                </button>
+
+            </form>
+
+            <div
+                id="loading"
+                class="loading oculto">
+
+                <img
+                    id="logoAnimada"
+                    src="assets/logo.png"
+                    alt="Logo">
+
+                <h3>Conectando ao GRI CONNECT SYS</h3>
+
+                <p>
+
+                    Preparando seu ambiente de consulta...
+
+                </p>
+
+            </div>
+
+            <div class="rodape">
+
+                <span>
+
+                    Portal sincronizado em
+
+                </span>
+
+                <strong id="dataSync">
+
+                    --/--/----
+
+                </strong>
+
+                <strong id="horaSync">
+
+                    --:--
+
+                </strong>
+
+                <span class="versao">
+
+                    Versão 1.0.0
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
