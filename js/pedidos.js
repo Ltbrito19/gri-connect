@@ -31,6 +31,8 @@ async function carregarPedidosPortal() {
 
         pedidos = await resposta.json();
 
+        alert("Pedidos carregados: " + pedidos.length);
+
         console.log(pedidos);
         console.log("Quantidade:", pedidos.length);
         console.log("Primeiro pedido:", pedidos[0]);
@@ -38,15 +40,15 @@ async function carregarPedidosPortal() {
 
         // Apenas pedidos que devem aparecer no Portal
         pedidosPortal = pedidos.filter(p =>
+            p.status === "Em Andamento" ||
+            p.status === "Agendado"
+        );
 
         console.log("Após filtro:", pedidosPortal.length);
         console.log(pedidosPortal);
 
-            p.status === "Em Andamento" ||
-            p.status === "Agendado"
-
-        );
-
+        alert("PedidosPortal: " + pedidosPortal.length);
+              
         carregarPedidos(pedidosPortal);
 
         atualizarIndicadores(pedidosPortal);
