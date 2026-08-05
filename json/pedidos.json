@@ -1,5 +1,16 @@
 [
     {
+        "numero": "H497531-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "CONDOMÍNIO 1 A 4",
+        "cidade": "VILA VALQUEIRE",
+        "inspetor": "VALMIR",
+        "whatsapp": "21 99265-2500",
+        "recebido": "2026-08-05",
+        "agendamento": "",
+        "status": "Em Andamento"
+    },
+    {
         "numero": "H497480-26",
         "companhia": "HDI SEGUROS",
         "produto": "CONDOMÍNIO 1 A 4",
@@ -261,7 +272,7 @@
         "whatsapp": "21 98825-9400",
         "recebido": "2026-07-27",
         "agendamento": "",
-        "status": "Pendente Cia"
+        "status": "Em Andamento"
     },
     {
         "numero": "H496278-26",
