@@ -75,28 +75,30 @@ async function carregarPedidosPortal() {
 
 function atualizarIndicadores(lista){
 
-    let criticos = 0;
-    let aguardando = 0;
-    let hoje = 0;
+    let agendados = 0;
+    let emAndamento = 0;
 
     lista.forEach(pedido => {
 
-        const dias = calcularDias(pedido.recebido);
+        if (pedido.status === "Agendado") {
+            agendados++;
+        }
 
-        if(dias >= 5)
-            criticos++;
-
-        if (dias >= 3 && dias <= 4)
-            aguardando++;
-
-        if(dias === 0)
-            hoje++;
+        if (pedido.status !== "Finalizado") {
+            emAndamento++;
+        }
 
     });
 
-    document.getElementById("qtCriticos").textContent = criticos;
-    document.getElementById("qtAguardando").textContent = aguardando;
-    document.getElementById("qtHoje").textContent = hoje;
+    document.getElementById("qtCriticos").textContent = agendados;
+    document.getElementById("qtAguardando").textContent = emAndamento;
+    document.getElementById("qtHoje").style.display = "none";
+
+    const cardHoje = document.getElementById("qtHoje").closest(".indicador");
+
+    if (cardHoje) {
+        cardHoje.style.display = "none";
+    }
 
 }
 
