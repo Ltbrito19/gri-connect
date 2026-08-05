@@ -43,6 +43,13 @@ async function carregarPedidosPortal() {
             p.status !== "Finalizado"
         );
 
+        console.table(
+            pedidosPortal.map(p => ({
+                numero: p.numero,
+                status: p.status
+            }))
+        );
+
         console.log("Após filtro:", pedidosPortal.length);
         console.log(pedidosPortal);
 
