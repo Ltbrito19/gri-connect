@@ -38,10 +38,9 @@ async function carregarPedidosPortal() {
         console.log("Primeiro pedido:", pedidos[0]);
         console.log("Status do primeiro:", pedidos[0].status);
 
-        // Apenas pedidos que devem aparecer no Portal
+        // Apenas pedidos que NÃO estão finalizados
         pedidosPortal = pedidos.filter(p =>
-            p.status === "Em Andamento" ||
-            p.status === "Agendado"
+            p.status !== "Finalizado"
         );
 
         console.log("Após filtro:", pedidosPortal.length);
@@ -82,9 +81,7 @@ function atualizarIndicadores(lista){
 
         if (pedido.status === "Agendado") {
             agendados++;
-        }
-
-        if (pedido.status !== "Finalizado") {
+        } else {
             emAndamento++;
         }
 
@@ -92,16 +89,18 @@ function atualizarIndicadores(lista){
 
     document.getElementById("qtCriticos").textContent = agendados;
     document.getElementById("qtAguardando").textContent = emAndamento;
+
     document.getElementById("qtHoje").style.display = "none";
 
-    const cardHoje = document.getElementById("qtHoje").closest(".indicador");
+    const cardHoje = document
+        .getElementById("qtHoje")
+        .closest(".indicador");
 
     if (cardHoje) {
         cardHoje.style.display = "none";
     }
 
 }
-
 /* ==========================================
    LISTA DE PEDIDOS
 ========================================== */
