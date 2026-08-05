@@ -15,8 +15,6 @@ let pedidosPortal = [];
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    alert("PEDIDOS.JS VERSÃO 04");
-   
     carregarPedidosPortal();
 
 });
@@ -25,36 +23,18 @@ async function carregarPedidosPortal() {
 
     try {
 
-        const resposta = await fetch(
-            "../json/pedidos.json?t=" + new Date().getTime()
-        );
+        const resposta = await fetch("../json/pedidos.json");
 
         pedidos = await resposta.json();
 
-        alert("Pedidos carregados: " + pedidos.length);
-
-        console.log(pedidos);
-        console.log("Quantidade:", pedidos.length);
-        console.log("Primeiro pedido:", pedidos[0]);
-        console.log("Status do primeiro:", pedidos[0].status);
-
-        // Apenas pedidos que NÃO estão finalizados
+        // Apenas pedidos que devem aparecer no Portal
         pedidosPortal = pedidos.filter(p =>
-            p.status !== "Finalizado"
+
+            p.status === "Em Andamento" ||
+            p.status === "Agendado"
+
         );
 
-        console.table(
-            pedidosPortal.map(p => ({
-                numero: p.numero,
-                status: p.status
-            }))
-        );
-
-        console.log("Após filtro:", pedidosPortal.length);
-        console.log(pedidosPortal);
-
-        alert("PedidosPortal: " + pedidosPortal.length);
-              
         carregarPedidos(pedidosPortal);
 
         atualizarIndicadores(pedidosPortal);
@@ -86,28 +66,19 @@ function atualizarIndicadores(lista){
 
     lista.forEach(pedido => {
 
-        if (pedido.status === "Agendado") {
+        if (pedido.status === "Agendado")
             agendados++;
-        } else {
+
+        if (pedido.status === "Em Andamento")
             emAndamento++;
-        }
 
     });
 
     document.getElementById("qtCriticos").textContent = agendados;
     document.getElementById("qtAguardando").textContent = emAndamento;
 
-    document.getElementById("qtHoje").style.display = "none";
-
-    const cardHoje = document
-        .getElementById("qtHoje")
-        .closest(".indicador");
-
-    if (cardHoje) {
-        cardHoje.style.display = "none";
-    }
-
 }
+
 /* ==========================================
    LISTA DE PEDIDOS
 ========================================== */
