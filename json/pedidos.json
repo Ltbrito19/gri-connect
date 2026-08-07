@@ -29,8 +29,8 @@
         "inspetor": "VALMIR",
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-07",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-10",
+        "status": "Agendado"
     },
     {
         "numero": "H497815-26",
@@ -41,7 +41,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-07",
         "agendamento": "",
-        "status": "Em Andamento"
+        "status": "Comunicado Sys"
     },
     {
         "numero": "H497531-26",
@@ -52,7 +52,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-05",
         "agendamento": "",
-        "status": "Em Andamento"
+        "status": "Comunicado Sys"
     },
     {
         "numero": "H497480-26",
@@ -63,7 +63,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-05",
         "agendamento": "",
-        "status": "Em Andamento"
+        "status": "Comunicado Sys"
     },
     {
         "numero": "H497466-26",
@@ -73,8 +73,8 @@
         "inspetor": "FRANCISCO",
         "whatsapp": "71 8652-2678",
         "recebido": "2026-08-05",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-12",
+        "status": "Agendado"
     },
     {
         "numero": "H497443-26",
@@ -85,7 +85,7 @@
         "whatsapp": "27 99952-4899",
         "recebido": "2026-08-05",
         "agendamento": "",
-        "status": "Em Andamento"
+        "status": "Pendente Cia"
     },
     {
         "numero": "H497418-26",
@@ -106,8 +106,8 @@
         "inspetor": "THIAGO",
         "whatsapp": "28 99935-9997",
         "recebido": "2026-08-04",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-07",
+        "status": "Agendado"
     },
     {
         "numero": "H497355-26",
@@ -128,8 +128,8 @@
         "inspetor": "VALMIR",
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-04",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-10",
+        "status": "Agendado"
     },
     {
         "numero": "H497320-26",
