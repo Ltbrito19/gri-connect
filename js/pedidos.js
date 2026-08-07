@@ -454,7 +454,7 @@ function configurarBotaoWhatsapp(pedido){
         if(pedido.status === "Agendado"){
 
             mensagem =
-`Bom dia, ${pedido.inspetor}.
+`Olá, ${pedido.inspetor}.
 
 Poderia verificar a situação do pedido ${pedido.numero}?
 
@@ -467,7 +467,7 @@ GRI Gerenciamento e Inspeção de Risco`;
         }else{
 
             mensagem =
-`Bom dia, ${pedido.inspetor}.
+`Olá, ${pedido.inspetor}.
 
 Poderia verificar a situação do pedido ${pedido.numero}?
 
