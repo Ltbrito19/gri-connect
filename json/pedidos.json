@@ -1,5 +1,16 @@
 [
     {
+        "numero": "H497815-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "CONDOMÍNIO 1 A 4",
+        "cidade": "FLAMENGO",
+        "inspetor": "VALMIR",
+        "whatsapp": "21 99265-2500",
+        "recebido": "2026-08-07",
+        "agendamento": "",
+        "status": "Em Andamento"
+    },
+    {
         "numero": "H497531-26",
         "companhia": "HDI SEGUROS",
         "produto": "CONDOMÍNIO 1 A 4",
@@ -52,7 +63,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-04",
         "agendamento": "2026-08-06",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H497407-26",
@@ -96,7 +107,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-04",
         "agendamento": "2026-08-06",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H497277-26",
@@ -107,7 +118,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-04",
         "agendamento": "2026-08-06",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H492321-26",
