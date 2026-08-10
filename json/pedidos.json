@@ -19,7 +19,7 @@
         "whatsapp": "21 98825-9400",
         "recebido": "2026-08-07",
         "agendamento": "",
-        "status": "Pendente KM"
+        "status": "Em Andamento"
     },
     {
         "numero": "H497887-26",
@@ -85,7 +85,7 @@
         "whatsapp": "27 99952-4899",
         "recebido": "2026-08-05",
         "agendamento": "",
-        "status": "Pendente Cia"
+        "status": "Em Andamento"
     },
     {
         "numero": "H497418-26",
@@ -107,7 +107,7 @@
         "whatsapp": "28 99935-9997",
         "recebido": "2026-08-04",
         "agendamento": "2026-08-07",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H497355-26",
@@ -118,7 +118,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-04",
         "agendamento": "2026-08-07",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H497387-26",
