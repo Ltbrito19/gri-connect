@@ -1,14 +1,69 @@
 [
     {
-        "numero": "H497840-26",
+        "numero": "H498190-26",
         "companhia": "HDI SEGUROS",
         "produto": "EMPRESA ATE 5K",
+        "cidade": "MACEIO",
+        "inspetor": "DIOGENES",
+        "whatsapp": "82 8831-6737",
+        "recebido": "2026-08-11",
+        "agendamento": "2026-08-12",
+        "status": "Finalizado"
+    },
+    {
+        "numero": "H498163-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "CONDOMÍNIO 1 A 4",
+        "cidade": "RIACHUELO",
+        "inspetor": "VALMIR",
+        "whatsapp": "21 99265-2500",
+        "recebido": "2026-08-11",
+        "agendamento": "2026-08-14",
+        "status": "Agendado"
+    },
+    {
+        "numero": "H498158-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "EMPRESA ATE 5K",
+        "cidade": "LAURO DE FREITAS",
+        "inspetor": "FRANCISCO",
+        "whatsapp": "71 8652-2678",
+        "recebido": "2026-08-11",
+        "agendamento": "",
+        "status": "Em Andamento"
+    },
+    {
+        "numero": "H498147-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "EMPRESA ATE 5K",
+        "cidade": "CACHOEIRO",
+        "inspetor": "THIAGO",
+        "whatsapp": "28 99935-9997",
+        "recebido": "2026-08-11",
+        "agendamento": "2026-08-12",
+        "status": "Agendado"
+    },
+    {
+        "numero": "H498118-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "EMPRESA ATE 5K",
+        "cidade": "PETROPOLIS",
+        "inspetor": "BRITO",
+        "whatsapp": "21994072338",
+        "recebido": "2026-08-10",
+        "agendamento": "2026-08-12",
+        "status": "Finalizado"
+    },
+    {
+        "numero": "H497840-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "RD EQUIPAMENTO",
         "cidade": "SALVADOR",
         "inspetor": "FRANCISCO",
         "whatsapp": "71 8652-2678",
         "recebido": "2026-08-07",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-12",
+        "status": "Finalizado"
     },
     {
         "numero": "H497888-26",
@@ -19,7 +74,7 @@
         "whatsapp": "21 98825-9400",
         "recebido": "2026-08-07",
         "agendamento": "",
-        "status": "Em Andamento"
+        "status": "Pendente Cia"
     },
     {
         "numero": "H497887-26",
@@ -30,7 +85,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-07",
         "agendamento": "2026-08-10",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H497815-26",
@@ -40,8 +95,8 @@
         "inspetor": "VALMIR",
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-07",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-10",
+        "status": "Finalizado"
     },
     {
         "numero": "H497531-26",
@@ -51,19 +106,8 @@
         "inspetor": "VALMIR",
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-05",
-        "agendamento": "",
-        "status": "Em Andamento"
-    },
-    {
-        "numero": "H497480-26",
-        "companhia": "HDI SEGUROS",
-        "produto": "CONDOMÍNIO 1 A 4",
-        "cidade": "BARRA DA TIJUCA",
-        "inspetor": "VALMIR",
-        "whatsapp": "21 99265-2500",
-        "recebido": "2026-08-05",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-11",
+        "status": "Finalizado"
     },
     {
         "numero": "H497466-26",
@@ -74,7 +118,7 @@
         "whatsapp": "71 8652-2678",
         "recebido": "2026-08-05",
         "agendamento": "2026-08-12",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H497443-26",
@@ -84,8 +128,8 @@
         "inspetor": "RONIELI",
         "whatsapp": "27 99952-4899",
         "recebido": "2026-08-05",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-11",
+        "status": "Finalizado"
     },
     {
         "numero": "H497418-26",
@@ -129,7 +173,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-04",
         "agendamento": "2026-08-10",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H497320-26",
@@ -773,9 +817,9 @@
         "numero": "H494611-26",
         "companhia": "HDI SEGUROS",
         "produto": "EMPRESA 5K,01 ~ 10K",
-        "cidade": "DUQUE DE CAXIAS",
-        "inspetor": "VALMIR",
-        "whatsapp": "21 99265-2500",
+        "cidade": "SALVADOR",
+        "inspetor": "FRANCISCO",
+        "whatsapp": "71 8652-2678",
         "recebido": "2026-07-14",
         "agendamento": "2026-07-17",
         "status": "Finalizado"
