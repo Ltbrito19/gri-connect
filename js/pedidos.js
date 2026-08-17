@@ -28,7 +28,9 @@ async function carregarPedidosPortal() {
         pedidos = await resposta.json();
 
         // Apenas pedidos que devem aparecer no Portal
-        pedidosPortal = pedidos;
+        pedidosPortal = pedidos.filter(p =>
+           p.status !== "Finalizado"
+        );
        
         carregarPedidos(pedidosPortal);
 
