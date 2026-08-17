@@ -44,11 +44,12 @@ async function carregarPedidosPortal() {
 
     } catch (erro) {
 
-        console.error(erro);
+        console.error("ERRO PORTAL GRI:", erro);
 
-        alert("Erro ao carregar pedidos.json");
-
-    }
+        alert(
+           "Erro no Portal GRI:\n\n" +
+           erro.message
+        );
 
 }
 
