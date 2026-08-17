@@ -28,13 +28,8 @@ async function carregarPedidosPortal() {
         pedidos = await resposta.json();
 
         // Apenas pedidos que devem aparecer no Portal
-        pedidosPortal = pedidos.filter(p =>
-
-            p.status === "Em Andamento" ||
-            p.status === "Agendado"
-
-        );
-
+        pedidosPortal = pedidos;
+       
         carregarPedidos(pedidosPortal);
 
         atualizarIndicadores(pedidosPortal);
