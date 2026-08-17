@@ -54,25 +54,94 @@
     </section>
 
 
+    <!-- ==========================================
+         RESUMO / FILTROS POR STATUS
+    =========================================== -->
+
     <section class="resumo">
 
-        <div class="item verde">
+        <div
+            class="item verde filtro-status"
+            data-status="Agendado">
+
             <span>🟢 Agendados</span>
-            <strong id="qtCriticos">0</strong>
+
+            <strong id="qtAgendados">0</strong>
+
         </div>
 
-        <div class="item amarelo">
+
+        <div
+            class="item amarelo filtro-status"
+            data-status="Em Andamento">
+
             <span>🟡 Em andamento</span>
-            <strong id="qtAguardando">0</strong>
+
+            <strong id="qtEmAndamento">0</strong>
+
         </div>
-        
+
+
+        <div
+            class="item filtro-status"
+            data-status="Pendente">
+
+            <span>🔵 Pendentes</span>
+
+            <strong id="qtPendentes">0</strong>
+
+        </div>
+
+
+        <div
+            class="item filtro-status"
+            data-status="Comunicado Sys">
+
+            <span>🟣 Comunicado Sys</span>
+
+            <strong id="qtComunicadoSys">0</strong>
+
+        </div>
+
+
+        <div
+            class="item filtro-status"
+            data-status="Pendente Cia">
+
+            <span>🟠 Pendente Cia</span>
+
+            <strong id="qtPendenteCia">0</strong>
+
+        </div>
+
+
+        <div
+            class="item filtro-status"
+            data-status="Pendente Km">
+
+            <span>🔴 Pendente Km</span>
+
+            <strong id="qtPendenteKm">0</strong>
+
+        </div>
+
+
+        <div
+            class="item filtro-status"
+            data-status="TODOS">
+
+            <span>📋 Todos os ativos</span>
+
+            <strong id="qtTodos">0</strong>
+
+        </div>
+
     </section>
 
 
-    <!--
-        A lista será criada automaticamente
-        pelo pedidos.js
-    -->
+    <!-- ==========================================
+         LISTA DE PEDIDOS
+    =========================================== -->
 
     <section
         id="listaPedidos">
@@ -181,6 +250,7 @@
     </div>
 
 </div>
+
 
 <script src="../js/pedidos.js"></script>
 
