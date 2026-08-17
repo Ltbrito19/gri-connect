@@ -1,5 +1,27 @@
 [
     {
+        "numero": "H498853-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "CONDOMÍNIO 1 A 4",
+        "cidade": "ANGRA DOS REIS",
+        "inspetor": "LUCIANO",
+        "whatsapp": "21 98825-9400",
+        "recebido": "2026-07-15",
+        "agendamento": "",
+        "status": "Pendente KM"
+    },
+    {
+        "numero": "H498833-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "CONDOMÍNIO 1 A 4",
+        "cidade": "COPACABANA",
+        "inspetor": "VALMIR",
+        "whatsapp": "21 99265-2500",
+        "recebido": "2026-08-14",
+        "agendamento": "2026-08-17",
+        "status": "Agendado"
+    },
+    {
         "numero": "H498713-26",
         "companhia": "HDI SEGUROS",
         "produto": "CONDOMÍNIO 1 A 4",
@@ -18,8 +40,8 @@
         "inspetor": "BRITO",
         "whatsapp": "21994072338",
         "recebido": "2026-08-13",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-17",
+        "status": "Finalizado"
     },
     {
         "numero": "H498628-26",
