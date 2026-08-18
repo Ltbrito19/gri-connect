@@ -7,8 +7,8 @@
         "inspetor": "VALMIR",
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-17",
-        "agendamento": "",
-        "status": "Em Andamento"
+        "agendamento": "2026-08-19",
+        "status": "Agendado"
     },
     {
         "numero": "H498853-26",
@@ -31,17 +31,6 @@
         "recebido": "2026-08-14",
         "agendamento": "2026-08-17",
         "status": "Finalizado"
-    },
-    {
-        "numero": "H498713-26",
-        "companhia": "HDI SEGUROS",
-        "produto": "CONDOMÍNIO 1 A 4",
-        "cidade": "CURICICA",
-        "inspetor": "VALMIR",
-        "whatsapp": "21 99265-2500",
-        "recebido": "2026-08-14",
-        "agendamento": "2026-08-20",
-        "status": "Agendado"
     },
     {
         "numero": "H498640-26",
