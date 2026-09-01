@@ -1,5 +1,16 @@
 [
     {
+        "numero": "H496970-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "EMPRESA ATE 5K",
+        "cidade": "MACEIO - FRUSTRADA",
+        "inspetor": "DIOGENES",
+        "whatsapp": "82 8831-6737",
+        "recebido": "2026-07-31",
+        "agendamento": "2026-08-04",
+        "status": "Finalizado"
+    },
+    {
         "numero": "H500921-26",
         "companhia": "HDI SEGUROS",
         "produto": "EMPRESA ATE 5K",
@@ -30,7 +41,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-31",
         "agendamento": "",
-        "status": "Em Andamento"
+        "status": "Comunicado Sys"
     },
     {
         "numero": "H500676-26",
@@ -52,7 +63,7 @@
         "whatsapp": "71 8652-2678",
         "recebido": "2026-08-28",
         "agendamento": "2026-09-01",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H500439-26",
@@ -96,7 +107,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-08-27",
         "agendamento": "2026-09-01",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H500293-26",
