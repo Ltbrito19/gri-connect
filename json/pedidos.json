@@ -1,5 +1,16 @@
 [
     {
+        "numero": "H506696-26",
+        "companhia": "HDI SEGUROS",
+        "produto": "CONDOMÍNIO 1 A 4",
+        "cidade": "RECREIO DOS BANDEIRANTES",
+        "inspetor": "VALMIR",
+        "whatsapp": "21 99265-2500",
+        "recebido": "2026-10-16",
+        "agendamento": "",
+        "status": "Em Andamento"
+    },
+    {
         "numero": "H506653-26",
         "companhia": "HDI SEGUROS",
         "produto": "EMPRESA ATE 5K",
@@ -85,7 +96,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-10-13",
         "agendamento": "2026-10-15",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H505690-26",
