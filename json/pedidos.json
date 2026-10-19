@@ -8,7 +8,7 @@
         "whatsapp": "21 99265-2500",
         "recebido": "2026-10-16",
         "agendamento": "",
-        "status": "Em Andamento"
+        "status": "Comunicado Sys"
     },
     {
         "numero": "H506653-26",
@@ -29,8 +29,8 @@
         "inspetor": "VALMIR",
         "whatsapp": "21 99265-2500",
         "recebido": "2026-10-15",
-        "agendamento": "",
-        "status": "Comunicado Sys"
+        "agendamento": "2026-10-19",
+        "status": "Agendado"
     },
     {
         "numero": "H506373-26",
@@ -40,8 +40,8 @@
         "inspetor": "VALMIR",
         "whatsapp": "21 99265-2500",
         "recebido": "2026-10-15",
-        "agendamento": "",
-        "status": "Comunicado Sys"
+        "agendamento": "2026-10-19",
+        "status": "Agendado"
     },
     {
         "numero": "H506377-26",
@@ -52,7 +52,7 @@
         "whatsapp": "21 98825-9400",
         "recebido": "2026-10-14",
         "agendamento": "2026-10-16",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H506178-26",
@@ -85,7 +85,7 @@
         "whatsapp": "21 98825-9400",
         "recebido": "2026-10-13",
         "agendamento": "2026-10-16",
-        "status": "Agendado"
+        "status": "Finalizado"
     },
     {
         "numero": "H506189-26",
